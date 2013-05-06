@@ -1,0 +1,20 @@
+<% @title = "Menu" %>
+
+
+  <h2> User Menu</h2>
+ <div id="structure_userbox">
+	<p>Logged in as: <%= session[:name] %></p>
+  <p><%= link_to("Logout", :controller => 'access', :action => 'logout') %></p>
+  </div> 
+  <div id="structure2" class="grid_4">
+ 
+    
+    	
+  	
+  
+  <ul>
+    <li><%= link_to("Read Some Posts", :controller => 'posts') %></li>
+    <li><%= link_to("Create a Post", :controller => 'posts', :action => 'new' ) %></li>
+    
+  </ul> 
+  </div>

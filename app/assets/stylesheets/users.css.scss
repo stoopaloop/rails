@@ -1,0 +1,128 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body 
+{
+margin-top: 0px;
+margin-left: 0px;
+color: black;
+background-color: #FFF;
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: 12px;
+}
+
+
+a {color: red; font-family: Verdana, Arial, Helvetica, sans-serif;   text-decoration: none}
+a:visited {color: darkred; text-decoration: none}
+a:active {color: #666666; text-decoration: none}
+a:hover {color: gray; text-decoration: underline}
+
+
+h1 
+{
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: 24px; 
+font-style: normal; 
+font-weight: bold;
+text-decoration: none;
+padding-left: 10px;
+padding-top: 0px;
+margin-bottom: 0px;
+margin-top: 10px;
+
+}
+
+
+h2 
+{  
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: 14px;
+font-weight: bold;
+text-decoration: none;
+padding-left: 10px;
+padding-top: 10px;
+margin-bottom: 0px;
+}
+
+
+p  
+{
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: 12px;
+font-style: normal; 
+font-weight: normal; 
+text-decoration: none;
+padding-left: 10px;
+margin-top: 0px;
+}
+
+/* Tell the browser to render HTML 5 elements as block */  
+header, footer, aside, nav, article {  
+        display: block;  
+    }  
+
+
+#header
+{
+position: relative;
+width: 950px;
+height: 50px;
+background-color: #C6D9FF;
+background-image: url(header-idea.jpg)
+}
+
+
+
+#nav
+{
+position: relative;
+width: 120px;
+height: 150px;
+background-color: gray;
+float: left;
+}
+
+#nav ul 
+{
+margin: 0px;
+padding: 10px;
+list-style-type: none;
+}
+
+#nav li
+{
+padding-bottom: 5px;
+}
+
+
+#nav a {color: white; font-family: Verdana, Arial, Helvetica, sans-serif;  font-size: 14px; font-weight: bold; text-decoration: none}
+#nav a:visited {color: white; text-decoration: none}
+#nav a:active {color: #666666; text-decoration: none}
+#nav a:hover {color: red; text-decoration: none}
+
+#section
+{
+position: relative;
+width: 818px;
+height: 450px;
+background-color: white;
+border-right: 2px solid #cccccc;
+float: left;
+}
+
+#footer {
+position: relative;
+width: 950px; 
+height: 25px;
+background-color: #cccccc; 
+float: left;
+} 
+
+#main {
+position: relative;
+margin-left: auto;
+margin-right: auto;
+width: 1000px; 
+height: 1000px;
+background-color: white;
+}

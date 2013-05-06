@@ -1,0 +1,11 @@
+
+<h1>Welcome to Idea Compendium!</h1>
+
+
+<p>Create a User</p>
+
+<%= link_to_unless_current("Click Here",  {:controller => 'users', :action => "new"})  %>
+
+<p>Login</p>
+
+<%= link_to_unless_current("Click Here",  {:controller => "access", :action => "login"})  %>

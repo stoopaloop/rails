@@ -1,0 +1,137 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+body 
+{
+margin-top: 0px;
+margin-left: 0px;
+color: black;
+background-color: white;
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: 12px;
+}
+
+
+a {color: red; font-family: Verdana, Arial, Helvetica, sans-serif;   text-decoration: none}
+a:visited {color: darkred; text-decoration: none}
+a:active {color: #666666; text-decoration: none}
+a:hover {color: gray; text-decoration: underline}
+
+
+h1 
+{
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: 24px; 
+font-style: normal; 
+font-weight: bold;
+text-decoration: none;
+padding-left: 10px;
+padding-top: 0px;
+margin-bottom: 0px;
+margin-top: 10px;
+
+}
+
+
+h2 
+{  
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: 14px;
+font-weight: bold;
+text-decoration: none;
+padding-left: 10px;
+padding-top: 10px;
+margin-bottom: 0px;
+}
+
+
+p  
+{
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: 12px;
+font-style: normal; 
+font-weight: normal; 
+text-decoration: none;
+padding-left: 10px;
+margin-top: 0px;
+}
+
+/* Tell the browser to render HTML 5 elements as block */  
+header, footer, aside, nav, article {  
+        display: block;  
+    }  
+
+
+#header
+{
+position: relative;
+width: 950px;
+height: 75px;
+background-color: #C6D9FF;
+}
+
+
+
+#nav
+{
+position: relative;
+width: 130px;
+height: 450px;
+background-color: gray;
+float: left;
+}
+
+#nav ul 
+{
+margin: 0px;
+padding: 10px;
+list-style-type: none;
+}
+
+#nav li
+{
+padding-bottom: 5px;
+}
+
+
+#nav a {color: white; font-family: Verdana, Arial, Helvetica, sans-serif;  font-size: 14px; font-weight: bold; text-decoration: none}
+#nav a:visited {color: white; text-decoration: none}
+#nav a:active {color: #666666; text-decoration: none}
+#nav a:hover {color: pink; text-decoration: none}
+
+#section
+{
+
+width: 818px;
+height: 450px;
+background-color: white;
+border-right: 2px solid #cccccc;
+float: left;
+}
+
+#footer {
+position: relative;
+width: 950px; 
+height: 25px;
+background-color: #cccccc; 
+float: left;
+} 
+
+#main {
+position: relative;
+margin-left: auto;
+margin-right: auto;
+width: 1000px; 
+height: 1000px;
+background-color: white;
+}

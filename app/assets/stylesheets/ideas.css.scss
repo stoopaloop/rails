@@ -1,0 +1,73 @@
+// Place all the styles related to the Ideas controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* Tell the browser to render HTML 5 elements as block */  
+header, footer, aside, nav, article {  
+        display: block;  
+    }  
+
+
+#header
+{
+position: relative;
+width: 950px;
+height: 50px;
+background-color: #C6D9FF;
+background-image: url(header-idea.jpg)
+}
+
+
+
+#nav
+{
+position: relative;
+width: 120px;
+height: 150px;
+background-color: gray;
+float: left;
+}
+
+#nav ul 
+{
+margin: 0px;
+padding: 10px;
+list-style-type: none;
+}
+
+#nav li
+{
+padding-bottom: 5px;
+}
+
+
+#nav a {color: white; font-family: Verdana, Arial, Helvetica, sans-serif;  font-size: 14px; font-weight: bold; text-decoration: none}
+#nav a:visited {color: white; text-decoration: none}
+#nav a:active {color: #666666; text-decoration: none}
+#nav a:hover {color: red; text-decoration: none}
+
+#section
+{
+position: relative;
+width: 818px;
+height: 450px;
+background-color: white;
+border-right: 2px solid #cccccc;
+float: left;
+}
+
+#footer {
+position: relative;
+width: 950px; 
+height: 25px;
+background-color: #cccccc; 
+float: left;
+} 
+
+#main {
+position: relative;
+margin-left: auto;
+margin-right: auto;
+width: 1000px; 
+height: 1000px;
+background-color: white;
+}

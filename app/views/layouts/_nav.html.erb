@@ -1,0 +1,6 @@
+<div id="nav">
+<%= link_to_unless_current("Home",  {:controller => "user", :action => "welcome"})  %> |
+<%= link_to_unless_current("Users",  {:controller => "user", :action => "index"})  %> |
+<%= link_to_unless_current("Posts",  {:controller => "posts", :action => "index"})  %> |
+<a href="http://www.ryanwebworks.com/aboutrails.html" target="_blank">About</a> | 
+</nav>

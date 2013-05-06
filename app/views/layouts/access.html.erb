@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project Idea Compendium</title>
+  <%= stylesheet_link_tag "users", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="header"><h1>The Idea Box</h1>
+<br />
+<br />
+<div id="nav">
+<%= link_to_unless_current("New User", {:controller => "users", :action => "new"})  %> 
+<br />
+<%= link_to_unless_current("Users", {:controller => "users", :action => "index"})  %> 
+<br />
+<%= link_to_unless_current("Posts", {:controller => "posts", :action => "index"})  %> 
+<br />
+<a href="http://www.ryanwebworks.com/aboutrails.html" target="_blank">About</a>
+
+<br />
+
+</div>
+
+
+<%= yield %>
+</div>
+</div>
+</body>
+</html>

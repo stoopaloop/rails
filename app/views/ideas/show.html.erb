@@ -1,0 +1,31 @@
+<head>
+<%= stylesheet_link_tag "ideas", :media => "all" %>
+</head>
+<p id="notice"><%= notice %></p>
+<div id="nav">
+<%= link_to_unless_current("New User", {:controller => "users", :action => "new"})  %> |
+<%= link_to_unless_current("Users", {:controller => "users", :action => "index"})  %> |
+<%= link_to_unless_current("Ideas", {:controller => "ideas", :action => "index"})  %> |
+<%= link_to_unless_current("About", {:controller => "user", :action => "about"}) %> |
+<%= link_to_unless_current("Log In Here", {:controller => "access", :action => "login"}) %> |
+</div>
+<div id="section">
+<p>
+	<b>User ID</b>
+   <%= @idea.user_id %>
+</p>
+ <p>   
+  <b>Name:</b>
+  <%= @idea.name %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @idea.content %>
+</p>
+</div>
+<div id="footer">
+<%= link_to_unless_current("Create Idea",  {:controller => "ideas", :action => "new"})  %>
+<%= link_to 'Edit', edit_idea_path(@idea) %> |
+<%= link_to 'Back', idea_path %>
+</div>

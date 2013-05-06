@@ -1,0 +1,32 @@
+<% @title = "Login" %>
+<%= flash[:notice] %>
+
+<h1>Welcome to Idea Box!</h1>
+<p>Please Log in or Sign up below:</p>
+<div class="login">
+  <%= form_tag(:action => 'attempt_login') do %>
+  <table>
+    <tr>
+      <td><%= label_tag(:name) %></td>
+      <td><%= text_field_tag(:name) %></td>
+    </tr>
+<tr>
+<td><%= label_tag(:email) %></td>
+<td><%= text_field_tag :email, params[:email] %></td>
+</tr>
+    <tr>
+      <td><%= label_tag(:password) %></td>
+      <td><%= password_field_tag(:password) %></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><%= submit_tag("Log In") %></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><h3><%= link_to("Sign up a New Account",  {:controller => 'users', :action => "new"})  %></h3>
+</td>
+    </tr>
+  </table>
+  <% end %>
+</div>
